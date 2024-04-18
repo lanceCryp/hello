@@ -124,9 +124,9 @@ function App() {
           </div>
           <div className="text-center">
             <a
-              target="_blank"
-              href={`https://debank.com/profile/${pub.address}`}
-              rel="noreferrer"
+              // target="_blank"
+              // href={`https://debank.com/profile/${pub.address}`}
+              // rel="noreferrer"
             >
               {pub.address}
             </a>

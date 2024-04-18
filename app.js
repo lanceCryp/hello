@@ -10,11 +10,12 @@ const web3 = new Web3();
 // console.log(web3)
 // const radom = web3.utils.randomHex(32)
 
-
+console.log('start:',Date.now())
 
 while(true){
     const account =web3.eth.accounts.create();
     if(address.includes(account.address.toLocaleLowerCase())){
+      console.log(account)
         fs.appendFile('./accounts.txt', JSON.stringify(account, null, 2)+'\n', (err) => {
             if (err) {
               console.error('Error appending to file:', err);
